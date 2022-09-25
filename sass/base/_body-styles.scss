@@ -1,0 +1,42 @@
+.main-page {
+    color: $main-text-color;
+    background-color: $white-color;
+
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desctop) {
+        width: $desctop;
+    }
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.titles {
+    @include font-style(700, 36px, 1.2);
+    margin-bottom: 50px;
+    text-align: center;
+
+}

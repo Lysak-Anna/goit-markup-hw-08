@@ -1,0 +1,21 @@
+.logo {
+    @extend %link;
+    @include font-style(700, 24px, 1.17);
+    font-family: Raleway, sans-serif;
+   
+}
+
+.logo__name-start {
+    color: $accent-color;
+
+}
+
+.logo__name-end {
+    &--black {
+        color: $main-text-color;
+    }
+
+    &--white {
+        color: $white-color;
+    }
+}
