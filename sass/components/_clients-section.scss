@@ -1,0 +1,48 @@
+.clients-section {
+    @include section-paddings (60px, 60px);
+}
+
+.clients-section .titles {
+    @include font-style (700, 28px, 1.18);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.clients {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients__item {
+    &:nth-child(2n+1) {
+        margin-right: 30px;
+    }
+    &:nth-child(-n+4) {
+        margin-bottom: 30px;
+    }
+}
+
+.clients__link {
+    @extend %link;
+    @include centered-flex;
+    color: $icon-color;
+
+    width: 210px;
+    height: 92px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+
+    padding: 16px 52px;
+    fill: currentColor;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+
+        transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

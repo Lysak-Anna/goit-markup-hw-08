@@ -11,7 +11,7 @@
     letter-spacing: $space;
 }
 
-@mixin section-paddings($top: 94px, $bottom: 94px) {
+@mixin section-paddings($top, $bottom) {
     padding-top: $top;
     padding-bottom: $bottom;
 }

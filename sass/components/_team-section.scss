@@ -1,0 +1,72 @@
+.team-section {
+    @include section-paddings(60px, 60px);
+    background-color: $light-background-color;
+}
+.team-section .titles {
+    @include font-style (700, 28px, 1.18);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.team {
+    @extend %list;
+}
+
+.team__item {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.team__content {
+    
+    background-color: $white-color;
+    text-align: center;
+    padding-bottom: 24px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.team__photo {
+    width: 450px;
+    height: 460px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.team__name {
+    @include font-style(500, 16px, 1.2);
+    margin-bottom: 10px;
+    
+}
+
+.team__position {
+    @include font-style(400, 16px, 1.2);
+    color: $additional-text-color;
+    margin-bottom: 16px;
+    
+
+}
+
+.soc-med {
+    @extend %list;
+    @include centered-flex;
+
+}
+
+.soc-med__item {
+    &+& {
+        margin-left: 10px;
+    }
+}
+
+.soc-med__link {
+    @extend %link;
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px 12px;
+    
+    fill: $icon-color;
+
+}

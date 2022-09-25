@@ -34,9 +34,3 @@ h3 {
     margin-bottom: 0;
 }
 
-.titles {
-    @include font-style(700, 36px, 1.2);
-    margin-bottom: 50px;
-    text-align: center;
-
-}
