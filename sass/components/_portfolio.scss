@@ -1,0 +1,41 @@
+.main-section {
+    @include section-paddings (60px, 60px);
+}
+.button-list {
+    @extend %list;
+    display: flex;
+              
+}
+.button-list__item {
+    &+& {
+        margin-left: 8px;
+    }
+}
+.button-list__unit {
+    @include font-style(500, 16px, 1.6);
+    
+    min-width: 73px;
+    height: 38px;
+    
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    
+    color: $main-text-color;
+    background-color: $light-background-color;
+    
+    cursor: pointer;
+    
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            color: $white-color;
+            background-color: $accent-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+            transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
