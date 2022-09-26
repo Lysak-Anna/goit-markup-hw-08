@@ -3,9 +3,18 @@
     background-color: $dark-background-color;
 }
 .footer-container {
-    text-align: center;
+    @media screen and (max-width: $mobile) {
+        text-align: center;
+    }
+   
+   
 
 }
+.tablet-container {
+    @media screen and (min-width: $tablet) {
+        @include centered-flex;
+    }
+}                       
 .footer-contacts {
     margin-top: 20px;
     margin-bottom: 60px;
@@ -57,7 +66,7 @@
             border-radius: 50px;
             fill: $white-color;
             background-color: rgba(255, 255, 255, 0.1);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
         }
 }
 .field {

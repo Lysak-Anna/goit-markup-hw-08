@@ -8,12 +8,26 @@
     margin-bottom: 30px;
 }
 .team {
-    @extend %list;
+   @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+   }
 }
 
 .team__item {
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (max-width: $mobile) {
+        &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+    }
+   
+    @media screen and (min-width: $tablet) {
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -32,6 +46,10 @@
     height: 460px;
     display: block;
     margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+        height: 374px;
+    }
 }
 
 .team__name {
@@ -49,7 +67,6 @@
 }
 
 .soc-med {
-    @extend %list;
     @include centered-flex;
 
 }
@@ -61,7 +78,7 @@
 }
 
 .soc-med__link {
-    @extend %link;
+    
     display: block;
     width: 44px;
     height: 44px;

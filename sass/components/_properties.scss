@@ -3,13 +3,29 @@
 }
 
 .peculiarities {
-    @extend %list;
+   @media screen and (min-width: $tablet) {
+     display: flex;
+     flex-wrap: wrap;
+   }
 }
 .peculiarities__item {
     width: 450px;
+    @media screen and (max-width: $mobile) {
+        &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+    }
+  
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+        width: 354px;
+
+        &:nth-child(2n+1) {
+            margin-right: 30px;
+        }
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
     }
     
 }
@@ -20,6 +36,11 @@
     border-radius: 4px;
     background-color: $light-background-color;
     margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+        padding-right: 142px;
+        padding-left: 142px;
+    }
 
 }
 
