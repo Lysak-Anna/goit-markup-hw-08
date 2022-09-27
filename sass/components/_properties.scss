@@ -1,11 +1,18 @@
 .properties {
     @include section-paddings(60px, 60px);
+
+    @media screen and (min-width: $desctop) {
+        @include section-paddings(94px, 0);
+    }
 }
 
 .peculiarities {
    @media screen and (min-width: $tablet) {
      display: flex;
-     flex-wrap: wrap;
+     
+   }
+   @media screen and (max-width: $tablet) {
+    flex-wrap: wrap;
    }
 }
 .peculiarities__item {
@@ -14,19 +21,29 @@
         &:not(:last-child) {
                 margin-bottom: 30px;
             }
-    }
-  
 
+    }
+   
     @media screen and (min-width: $tablet) {
         width: 354px;
-
-        &:nth-child(2n+1) {
-            margin-right: 30px;
-        }
-        &:nth-child(-n+2) {
-            margin-bottom: 30px;
-        }
     }
+    @media screen and (max-width: $tablet) {
+        &:nth-child(2n+1) {
+                margin-right: 30px;
+            }
+        
+            &:nth-child(-n+2) {
+                margin-bottom: 30px;
+            }
+       
+    }
+    @media screen and (min-width: $desctop) {
+             width: 270px;
+    
+             &+& {
+                 margin-left: 30px;
+             }
+         }
     
 }
 
@@ -38,8 +55,11 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: $tablet) {
-        padding-right: 142px;
-        padding-left: 142px;
+        padding: 25px 142px;
+        
+    }
+    @media screen and (min-width: $desctop) {
+        padding: 25px 100px;
     }
 
 }
@@ -49,6 +69,10 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 10px;
+
+    @media screen and (min-width: $desctop) {
+        text-align: left;
+    }
 }
 .peculiarities__text {
     @include font-style(400, 14px, 1.7);

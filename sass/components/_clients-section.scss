@@ -1,16 +1,28 @@
 .clients-section {
     @include section-paddings (60px, 60px);
+
+    @media screen and (min-width: $desctop) {
+        @include section-paddings (94px, 94px);
+    }
 }
 
 .clients-section .titles {
     @include font-style (700, 28px, 1.18);
     text-align: center;
     margin-bottom: 30px;
+    
+    @media screen and (min-width: $desctop) {
+    @include font-style(700, 36px, 1.2);
+        margin-bottom: 50px;
+    }   
 }
 
 .clients {
     display: flex;
+
+    @media screen and (max-width: $tablet) {
     flex-wrap: wrap;
+    }
 }
 
 .clients__item {
@@ -22,13 +34,18 @@
         margin-bottom: 30px;
     }
 }
-    @media screen and (min-width: $tablet) {
+    @media screen and (max-width: $tablet) {
         &:not(:nth-child(3n)) {
             margin-right: 30px;
         }
         &:nth-child(-n+3) {
             margin-bottom: 30px;
         }
+    }
+    @media screen and (min-width: $desctop) {
+        &+& {
+                margin-left: 30px;
+            }
     }
 }
 
@@ -57,7 +74,11 @@
 
     @media screen and (min-width: $tablet) {
         width: 226px;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding: 16px 60px;
+        
+    }
+    @media screen and (min-width: $desctop) {
+        width: 170px;
+        padding: 16px 32px;
     }
 }

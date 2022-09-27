@@ -75,6 +75,9 @@
     &:nth-child(2n+1) {
         margin-right: 30px;
     }
+    &:nth-child(-n+7) {
+        margin-bottom: 30px;
+    }
     
          
 }
@@ -151,10 +154,16 @@
     
     border: 1px solid $portfolio-border-color;
     padding: 20px 24px;
-    
-    
-   
+    @media screen and (max-width: $tablet) {
+    &--tablet-first {
+        height: 147px;
+    }  
+    &--tablet-second {
+        width: 354px;
+    }
 }
+}
+
 
 
 

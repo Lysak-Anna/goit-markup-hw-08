@@ -1,3 +1,50 @@
 .description {
     display: none;
+
+@media screen and (min-width: $desctop) {
+        display: block;
+        @include section-paddings (94px, 94px);
+    
+
+.works {
+    
+    display: flex;
+}
+.titles {
+    @include font-style(700, 36px, 1.2);
+        margin-bottom: 50px;
+        text-align: center;
+}
+
+.works__item {
+    position: relative;
+    display: block;
+    z-index: 1;
+
+    &+& {
+        margin-left: 30px;
+    }
+}
+
+.works__image {
+    display: block;
+}
+
+.works__label {
+    @include font-style(700, 14px, 1.14);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $white-color;
+    padding-top: 27px;
+    padding-bottom: 27px;
+}
+    }
 }
