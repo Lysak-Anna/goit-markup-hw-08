@@ -2,16 +2,30 @@
     @include section-paddings (60px, 60px);
 }
 .button-list {
-    @extend %list;
     display: flex;
-    flex-wrap: wrap;
     margin-bottom: 40px;
+    @media screen and (max-width: $mobile) {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 30px;
+        justify-content: center;
+        
+    }
               
 }
 .button-list__item {
+    @media screen and (max-width: $mobile) {
     &:not(:last-child) {
         margin-right: 8px;
         margin-bottom: 15px;
+    }
+}
+    @media screen and (min-width: $tablet) {
+        &+& {
+            margin-left: 8px;
+        }
     }
    
 }
@@ -44,19 +58,30 @@
         }
 }
 .portfolio-list {
-    @extend %list;
-
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .portfolio-list__item {
-
+    @media screen and (max-width: $mobile) {
     &:not(:last-child) {
         margin-bottom: 30px;
     }
 }
+@media screen and (max-width: $tablet) {
+    
+    &:nth-child(2n+1) {
+        margin-right: 30px;
+    }
+    
+         
+}
+}
 
 .portfolio-list__link {
-    @extend %link;
+    
 
     display: block;
 
@@ -72,12 +97,20 @@
 }
 
 .portfolio-card {
+    
     position: relative;
     overflow: hidden;
+  
 }
 
 .portfolio-card__image {
     display: block;
+    width: 450px;
+    height: 294px;
+    @media screen and (min-width: $tablet) {
+            width: 354px;
+    
+        }
 }
 
 .portfolio-card__content {
@@ -89,10 +122,13 @@
     background-color: rgba(33, 150, 243, 0.9);
     opacity: 0;
     color: $white-color;
-    padding: 63px 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 77px;
 
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
 }
 .portfolio-card__label {
@@ -112,8 +148,12 @@
 }
 
 .border {
+    
     border: 1px solid $portfolio-border-color;
     padding: 20px 24px;
+    
+    
+   
 }
 
 
