@@ -4,7 +4,7 @@
    
 }
 .footer-container {
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $pre-tablet) {
         text-align: center;
         
     }
@@ -16,13 +16,14 @@
 
 }
 .tablet-container {
-    @media screen and (max-width: $tablet) {
+    @media screen and (min-width: $tablet) {
         display: flex;
        
     }
 }  
 .footer-adress {
-    @media screen and (max-width: $tablet) {
+        
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop) {
         text-align: center;
         margin-right: 165px;
         margin-left: 76px;
@@ -31,7 +32,7 @@
 }                     
 .footer-contacts {
     margin-top: 20px;
-    @media screen and(max-width: $tablet) {
+    @media screen and(max-width: $pre-desctop) {
     margin-bottom: 60px;
     }
 }
@@ -70,11 +71,14 @@
     }
 }
 .social-media {
-    @media screen and (max-width: $tablet) {
+
+    @media screen and (min-width: $tablet) {
         padding-top: 5px;
     }
     @media screen and (min-width: $desctop) {
         margin-left: 70px;
+        padding-top: 12px;
+        
     }
 }
 .footer-text {
@@ -83,17 +87,15 @@
     
     color: $white-color;
     margin-bottom: 20px;
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $pre-desctop) {
         text-align: center;
     }
-    @media screen and (min-width: $desctop) {
-        margin-top: 12px;
-    }
+   
 
 }
 .footer-soc-med {
     @include centered-flex;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $pre-tablet) {
     margin-bottom: 60px;
     }
 }
@@ -109,9 +111,10 @@
             background-color: rgba(255, 255, 255, 0.1);
             
         }
+
 }
 .footer-send {
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $pre-desctop) {
         text-align: center;
         width: 450px;
         margin-right: auto;
@@ -126,7 +129,7 @@
 .field {
     display: flex;
     flex-direction: column;
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $pre-desctop) {
     margin-bottom: 20px;
     }
 }

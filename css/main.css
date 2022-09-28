@@ -1130,7 +1130,7 @@ a {
   background-color: #2F303A;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-container {
     text-align: center;
   }
@@ -1141,13 +1141,13 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .tablet-container {
     display: flex;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-adress {
     text-align: center;
     margin-right: 165px;
@@ -1159,7 +1159,7 @@ a {
 .footer-contacts {
   margin-top: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer-contacts {
     margin-bottom: 60px;
   }
@@ -1195,7 +1195,7 @@ a {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .social-media {
     padding-top: 5px;
   }
@@ -1203,6 +1203,7 @@ a {
 @media screen and (min-width: 1200px) {
   .social-media {
     margin-left: 70px;
+    padding-top: 12px;
   }
 }
 
@@ -1215,14 +1216,9 @@ a {
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer-text {
     text-align: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-text {
-    margin-top: 12px;
   }
 }
 
@@ -1231,7 +1227,7 @@ a {
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-soc-med {
     margin-bottom: 60px;
   }
@@ -1247,7 +1243,7 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .footer-send {
     text-align: center;
     width: 450px;
@@ -1266,7 +1262,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .field {
     margin-bottom: 20px;
   }
