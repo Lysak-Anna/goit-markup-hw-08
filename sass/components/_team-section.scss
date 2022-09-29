@@ -6,13 +6,13 @@
         @include section-paddings (94px, 94px);
     }
 }
-.team-section .titles {
+.title {
     @include font-style (700, 28px, 1.18);
     text-align: center;
     margin-bottom: 30px;
     
     @media screen and (min-width: $desctop) {
-    @include font-style(700, 36px, 1.2);
+        @include font-style(700, 36px, 1.2);
         margin-bottom: 50px;
     }
         
@@ -20,36 +20,27 @@
 .team {
    @media screen and (min-width: $tablet) {
         display: flex;
-   }
-   @media screen and (max-width: $tablet) {
         flex-wrap: wrap;
-   }
+        gap: 30px;
+   } 
 }
-
 .team__item {
-    @media screen and (max-width: $mobile) {
-        &:not(:last-child) {
-                margin-bottom: 30px;
+    @media screen and (max-width: $pre-tablet) {
+        width: 450px;
+         &:not(:last-child) {
+            margin-bottom: 30px;
             }
     }
    
-    @media screen and (max-width: $tablet) {
-        &:nth-child(2n+1) {
-            margin-right: 30px;
-        }
-        &:nth-child(-n+2) {
-            margin-bottom: 30px;
-        }
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px) / 2);
     }
+
     @media screen and (min-width: $desctop) {
-        &+& {
-                margin-left: 30px;
-            }
+        width: calc((100% - 90px) / 4);
     }
 }
-
 .team__content {
-    
     background-color: $white-color;
     text-align: center;
     padding-bottom: 24px;
@@ -62,18 +53,7 @@
 }
 
 .team__photo {
-    width: 450px;
-    height: 460px;
-    display: block;
     margin-bottom: 30px;
-    @media screen and (min-width: $tablet) {
-        width: 354px;
-        height: 374px;
-    }
-    @media screen and (min-width: $desctop) {
-        width: 270px;
-        height: 260px;
-    }
 }
 
 .team__name {
@@ -81,26 +61,21 @@
     margin-bottom: 10px;
     
 }
-
 .team__position {
     @include font-style(400, 16px, 1.2);
     color: $additional-text-color;
     margin-bottom: 16px;
     
-
 }
-
 .soc-med {
     @include centered-flex;
 
 }
-
 .soc-med__item {
     &+& {
         margin-left: 10px;
     }
 }
-
 .soc-med__link {
     
     display: block;
@@ -114,14 +89,14 @@
         border-radius: 50%;
 
         transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         
-            &:hover,
-            &:focus {
+        &:hover,
+        &:focus {
                 fill: $white-color;
                 background-color: $accent-color;
                 transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            }
+        }
     }
 
 }

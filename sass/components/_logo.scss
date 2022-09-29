@@ -1,5 +1,5 @@
 .logo {
-    @extend %link;
+    
     @include font-style(700, 24px, 1.17);
     font-family: Raleway, sans-serif;
     
