@@ -1,5 +1,9 @@
 .main-section {
     @include section-paddings (60px, 60px);
+
+    @media screen and (min-width: $desctop) {
+        @include section-paddings (94px, 94px);
+    }
 }
 .button-list {
     display: flex;
@@ -60,61 +64,30 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
         gap: 30px;
     }
 }
 
 .portfolio-list__item {
-    @media screen and (max-width: $mobile) {
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    flex-basis: 100%; 
+    @media screen and (max-width: $pre-tablet) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
-}
-@media screen and (max-width: $tablet) {
-    
-    &:nth-child(2n+1) {
-        margin-right: 30px;
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 30px) / 2);
+        
     }
-    &:nth-child(-n+7) {
-        margin-bottom: 30px;
+    @media screen and (min-width: $desctop) {
+        flex-basis: calc((100% - 60px) / 3);
     }
-    
-         
+     
 }
-}
-
-.portfolio-list__link {
-    
-
-    display: block;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    }
-
-}
-
 .portfolio-card {
-    
     position: relative;
     overflow: hidden;
   
-}
-
-.portfolio-card__image {
-    display: block;
-    width: 450px;
-    height: 294px;
-    @media screen and (min-width: $tablet) {
-            width: 354px;
-    
-        }
 }
 
 .portfolio-card__content {
@@ -145,17 +118,31 @@
     @include font-style(400, 16px, 1.9);
     color: $additional-text-color;
 }
+.portfolio-list__link {
+    display: block;
 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+}
 .portfolio-list__link:hover .portfolio-card__content {
     transform: translateY(0);
     opacity: 1;
 }
 
 .border {
+    
     border-bottom: 1px solid $portfolio-border-color;
     border-left: 1px solid $portfolio-border-color; 
     border-right: 1px solid $portfolio-border-color; 
     padding: 20px 24px;
+    
 }
 
 

@@ -94,12 +94,13 @@
 .header-contacts {
     @media screen and (min-width: $tablet) {
         margin-left: auto;
-        
+    
     }
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $pre-desctop) {
         margin-top: auto;
         margin-bottom: auto;
     }
+    
     @media screen and (min-width: $desctop) {
         @include centered-flex;
     }
@@ -107,10 +108,10 @@
 }
 
 .header-contacts__item {
-    @media screen and (max-width: $tablet){
+    @media screen and (min-width: $tablet) and (max-width: $pre-desctop){
         
-         &:not(:last-child) {
-            margin-bottom: 10px;
+         &+& {
+            margin-top: 10px;
          }
     }
     @media screen and (min-width: $desctop) {
@@ -124,14 +125,10 @@
 .header-contacts__link {
     @media screen and (min-width: $tablet){
     color: $additional-text-color;
-
-    &:hover,
-    &:focus {
-        color: $accent-color;
-        transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    
+   
 }
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $pre-desctop) {
         display: flex;
         @include font-style(500, 12px, 1.16, 0.02em);
     }
@@ -141,6 +138,12 @@
         
         padding-top: 32px;
         padding-bottom: 32px;
+
+        &:hover,
+        &:focus {
+                color: $accent-color;
+                transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
 
 }
