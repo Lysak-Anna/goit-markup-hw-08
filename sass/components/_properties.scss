@@ -7,21 +7,13 @@
 }
 
 .peculiarities {
-   @media screen and (min-width: $tablet) {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 30px;
-     
-   }   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+          
 }
 .peculiarities__item {
-    @media screen and (max-width: $mobile) {
-        width: 450px;
-        &:not(:last-child) {
-                margin-bottom: 30px;
-            }
-
-    }
+    flex-basis: 100%;
    
     @media screen and (min-width: $tablet) {
        

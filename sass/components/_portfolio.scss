@@ -4,7 +4,7 @@
 .button-list {
     display: flex;
     margin-bottom: 40px;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $pre-tablet) {
         flex-wrap: wrap;
     }
 
@@ -16,7 +16,7 @@
               
 }
 .button-list__item {
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $pre-tablet) {
     &:not(:last-child) {
         margin-right: 8px;
         margin-bottom: 15px;
@@ -34,11 +34,10 @@
     
     min-width: 73px;
     height: 38px;
-    
     padding: 6px 22px;
+    text-align: center;
     border-radius: 4px;
     border: none;
-    text-align: center;
     
     color: $main-text-color;
     background-color: $light-background-color;
@@ -61,6 +60,8 @@
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        gap: 30px;
     }
 }
 
@@ -151,17 +152,10 @@
 }
 
 .border {
-    
-    border: 1px solid $portfolio-border-color;
+    border-bottom: 1px solid $portfolio-border-color;
+    border-left: 1px solid $portfolio-border-color; 
+    border-right: 1px solid $portfolio-border-color; 
     padding: 20px 24px;
-    @media screen and (max-width: $tablet) {
-    &--tablet-first {
-        height: 147px;
-    }  
-    &--tablet-second {
-        width: 354px;
-    }
-}
 }
 
 
