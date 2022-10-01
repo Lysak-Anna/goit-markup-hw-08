@@ -5,34 +5,51 @@
 }
 .menu-button {
     display: block;
+    margin-top: auto;
+    margin-bottom: auto;
     width: 40px;
     height: 40px;
     border: none;
     background-color: transparent;
-    
+    padding: 0;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+    @media screen and (min-width: $tablet){
+    display: none;
+    }
 }
 .menu-button .icon-close-mobile {
     display: none;
 }
 .menu-button.is-open .icon-close-mobile {
     display: block;
+
 }
 .menu-button.is-open .icon-menu {
     display: none;
 }
 .menu-container {
+    @media screen and (max-width: $pre-tablet) {
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+    background-color: $white-color;
+    padding-left: 40px;
+    &.is-open {
+            display: block;
+        }
+    }    
 }
 
 
 .flex-container {
-@media screen and (min-width: $tablet) {
-     display: flex;
-    }
-    
+    display: flex;
+    justify-content: space-between;    
 }
 
 .site-nav {
@@ -43,6 +60,11 @@
 }
 
 .list-navigation {
+    @media screen and (max-width: $pre-tablet) {
+        margin-bottom: 302px;
+    }
+    
+
     @media screen and (min-width: $tablet) {
     @include centered-flex;
     margin-left: 87px;
@@ -54,6 +76,9 @@
 }
 
 .list-navigation__item {
+    @media screen and (max-width: $pre-tablet) {
+        margin-bottom: 35px;
+    }
     @media screen and (min-width: $tablet){
     &:not(:last-child) {
         margin-right: 50px;
@@ -62,6 +87,16 @@
 }
 
 .list-navigation__link {
+    @media screen and (max-width: $pre-tablet) {
+    @include font-style (500, 40px, 1.17, 0.02em);
+        &--studio-current,
+        &--portfolio-current {
+            color: $accent-color;
+        }
+    }
+
+
+
     @media screen and (min-width: $tablet) {
     @include centered-flex;
     @include font-style(500, 14px, 1.14, 0.02em);
@@ -116,22 +151,34 @@
 }
 
 .header-contacts {
+    @media screen and (max-width: $pre-tablet) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 64px;
+       
+    }
     @media screen and (min-width: $tablet) {
         margin-left: auto;
     
     }
-    @media screen and (max-width: $pre-desctop) {
+    /*@media screen and (max-width: $pre-desctop) {
         margin-top: auto;
         margin-bottom: auto;
     }
     
     @media screen and (min-width: $desctop) {
         @include centered-flex;
-    }
+    }*/
     
 }
 
 .header-contacts__item {
+    @media screen and (max-width: $pre-tablet) {
+        &+& {
+                margin-bottom: 32px;
+            }
+    }
+    
     @media screen and (min-width: $tablet) and (max-width: $pre-desctop){
         
          &+& {
@@ -147,12 +194,23 @@
 }
 
 .header-contacts__link {
+    @media screen and (max-width: $pre-tablet) {
+        &--number {
+            @include font-style (500, 34px, 1.18, 0.02em);
+            color: $accent-color;
+        }
+        &--mail {
+            @include font-style (500, 24px, 1.17, 0.02em);
+            color: $additional-text-color;
+        }
+    }
+
     @media screen and (min-width: $tablet){
     color: $additional-text-color;
     
    
 }
-    @media screen and (max-width: $pre-desctop) {
+    /*@media screen and (max-width: $pre-desctop) {
         display: flex;
         @include font-style(500, 12px, 1.16, 0.02em);
     }
@@ -168,16 +226,47 @@
                 color: $accent-color;
                 transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-    }
+    }*/
 
 }
 
 .header-contacts__icon {
+    @media screen and (max-width: $pre-tablet) {
+        display: none;
+    }
     @media screen and (min-width: $tablet) {
     margin-right: 8px;
     fill: currentColor;
     }
     @media screen and (min-width: $desctop) {
         margin-right: 10px;
+    }
+}
+
+.social-media-list {
+    display: none;
+    @media screen and (max-width: $pre-tablet) {
+        display: flex;
+        
+    }
+}
+.social-media-list__item {
+    display: flex;
+}
+.social-media-list__link {
+    @include font-style (500, 18px, 1.22, 0.02em);
+    color: $accent-color;
+
+    &::after {
+        display: block;
+        content: '';
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 22px;
+        height: 0;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+
+
+
     }
 }
