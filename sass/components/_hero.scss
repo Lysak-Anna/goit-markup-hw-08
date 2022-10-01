@@ -1,6 +1,7 @@
 .hero {
     @include section-paddings (118px, 118px);
     height: 400px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right,
@@ -16,8 +17,7 @@
     @media screen and (min-width: $desctop) {
         @include section-paddings (200px, 200px);
         height: 600px;
-
-        max-width: 1600px;
+           
     }
 
 }
