@@ -390,6 +390,7 @@ img {
     background-color: #FFFFFF;
     padding-left: 40px;
     padding-bottom: 48px;
+    z-index: 8;
   }
   .menu-container.is-open {
     display: block;
