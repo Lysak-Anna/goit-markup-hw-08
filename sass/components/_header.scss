@@ -40,6 +40,7 @@
     width: 100%;
     background-color: $white-color;
     padding-left: 40px;
+    padding-bottom: 48px;
     &.is-open {
             display: block;
         }
@@ -252,21 +253,32 @@
 }
 .social-media-list__item {
     display: flex;
+    align-items: center;
+
+    
+    &::after {
+            display: block;
+            content: '';
+            margin-right: 10px;
+            margin-left: 10px;
+            width: 22px;
+            height: 0;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            transform: rotate(90deg);
+    
+        }
+
+        &--without-elem {
+            &::after {
+                display: none;
+            }
+        }
+    
+
 }
 .social-media-list__link {
     @include font-style (500, 18px, 1.22, 0.02em);
     color: $accent-color;
 
-    &::after {
-        display: block;
-        content: '';
-        margin-right: 10px;
-        margin-left: 10px;
-        width: 22px;
-        height: 0;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-
-
-
-    }
+   
 }
