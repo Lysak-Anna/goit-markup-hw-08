@@ -6,7 +6,7 @@
     letter-spacing: 0.03em;
 
    
-           
+   
         
 }
 
@@ -28,7 +28,13 @@
     @media screen and (min-width: $desctop) {
         width: $desctop;
     }
+
+    @media screen and (min-width: $mobile) and (max-width: $pre-tablet) {
+        position: relative;
+        overflow: hidden;
+    }
 }
+
 
 p,
 h1,

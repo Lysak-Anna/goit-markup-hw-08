@@ -15,14 +15,15 @@
 }
 
 .mobile-header {
+    @media screen and (max-width: $pre-tablet) {
     display: flex;
+    }
 
     
 }
 .menu-toggle {
-    position: absolute;
-    top: 10px;
-    right: 15px;
+    @media screen and (max-width: $pre-tablet) {
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,9 +32,11 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    margin-left: 276px;
     margin-top: auto;
     margin-bottom: auto;
     cursor: pointer;
+    }
 }
 .menu-container,
 .menu-toggle {
@@ -41,7 +44,9 @@
         display: none;
     }
 }
+
 .menu-container {
+    @media screen and (max-width: $pre-tablet) {
     z-index: 10;
     position: absolute;
     background-color: $white-color;
@@ -54,6 +59,10 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .menu-toggle {
+
+        position: absolute;
+        top: 10px;
+        right: 15px;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
@@ -62,8 +71,11 @@
         }
     }
 }
+}
 .menu-container.is-open {
+    @media screen and (max-width: $pre-tablet) {
     transform: translateX(0);
+    }
 }
 
 .menu {
@@ -248,6 +260,7 @@
 }
 
 .social-media-list__item {
+    @media screen and (max-width: $pre-tablet) {
     display: flex;
     align-items: center;
 
@@ -269,13 +282,15 @@
             display: none;
         }
     }
-
+}
 
 }
 
 .social-media-list__link {
+    @media screen and (max-width: $pre-tablet) {
     @include font-style (500, 18px, 1.22, 0.02em);
     color: $accent-color;
+    }
 
 
 }
