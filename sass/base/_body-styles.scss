@@ -29,10 +29,7 @@
         width: $desctop;
     }
 
-    @media screen and (min-width: $mobile) and (max-width: $pre-tablet) {
-        position: relative;
-        overflow: hidden;
-    }
+   
 }
 
 
