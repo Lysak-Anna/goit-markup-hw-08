@@ -15,28 +15,27 @@
   <body class="main-page">
     <header class="page-header">
       <div class="container flex-container">
-
         <div class="mobile-header">
-        <a href="./index.html" class="logo"
-          ><span class="logo__name-start">Web</span
-          ><span class="logo__name-end logo__name-end--black">Studio</span>
-        </a>
+          <a href="./index.html" class="logo"
+            ><span class="logo__name-start">Web</span
+            ><span class="logo__name-end logo__name-end--black">Studio</span>
+          </a>
 
-        <button
-          class="menu-toggle js-open-menu"
-          type="button"
-          aria-expanded="false"
-          aria-controls="menu-container"
-        >
-          <svg
-            class="icon-menu"
-            width="24"
-            height="24"
-            aria-label="Перемикач мобільного меню"
+          <button
+            class="menu-toggle js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
+            <svg
+              class="icon-menu"
+              width="24"
+              height="24"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
         <div class="menu">
           <nav class="site-nav">
@@ -80,16 +79,15 @@
             </ul>
           </nav>
         </div>
-        </div>
       </div>
     </header>
 
-     <div class="menu-container js-menu-container" id="mobile-menu" >
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button
         class="menu-toggle js-close-menu"
         type="button"
         aria-expanded="false"
-        aria-controls="menu-container"
+        aria-controls="mobile-menu"
       >
         <svg
           class="icon-menu"
@@ -103,63 +101,63 @@
           ></use>
         </svg>
       </button>
-          <div class="mobile-menu">
-      <nav class="site-nav">
-        <ul class="list-navigation">
-          <li class="list-navigation__item">
-            <a href="./index.html" class="list-navigation__link">Студія</a>
-          </li>
-          <li class="list-navigation__item">
-            <a
-              href="./portfolio.html"
-              class="list-navigation__link list-navigation__link--portfolio-current"
-              >Портфоліо
-            </a>
-          </li>
-          <li class="list-navigation__item">
-            <a href="" class="list-navigation__link">Контакти</a>
-          </li>
-        </ul>
+      <div class="mobile-menu">
+        <nav class="site-nav">
+          <ul class="list-navigation">
+            <li class="list-navigation__item">
+              <a href="./index.html" class="list-navigation__link">Студія</a>
+            </li>
+            <li class="list-navigation__item">
+              <a
+                href="./portfolio.html"
+                class="list-navigation__link list-navigation__link--portfolio-current"
+                >Портфоліо
+              </a>
+            </li>
+            <li class="list-navigation__item">
+              <a href="" class="list-navigation__link">Контакти</a>
+            </li>
+          </ul>
 
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="header-contacts__link header-contacts__link--mail"
+          <ul class="header-contacts">
+            <li class="header-contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header-contacts__link header-contacts__link--mail"
+              >
+                <svg class="header-contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com
+              </a>
+            </li>
+            <li class="header-contacts__item">
+              <a
+                href="tel:+380961111111"
+                class="header-contacts__link header-contacts__link--number"
+              >
+                <svg class="header-contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="social-media-list">
+            <li class="social-media-list__item">
+              <a class="social-media-list__link" href="#">Instagram</a>
+            </li>
+            <li class="social-media-list__item">
+              <a class="social-media-list__link" href="#">Twitter</a>
+            </li>
+            <li class="social-media-list__item">
+              <a class="social-media-list__link" href="#">Facebook</a>
+            </li>
+            <li
+              class="social-media-list__item social-media-list__item--without-elem"
             >
-              <svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com
-            </a>
-          </li>
-          <li class="header-contacts__item">
-            <a
-              href="tel:+380961111111"
-              class="header-contacts__link header-contacts__link--number"
-            >
-              <svg class="header-contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11
-            </a>
-          </li>
-        </ul>
-        <ul class="social-media-list">
-          <li class="social-media-list__item">
-            <a class="social-media-list__link" href="#">Instagram</a>
-          </li>
-          <li class="social-media-list__item">
-            <a class="social-media-list__link" href="#">Twitter</a>
-          </li>
-          <li class="social-media-list__item">
-            <a class="social-media-list__link" href="#">Facebook</a>
-          </li>
-          <li
-            class="social-media-list__item social-media-list__item--without-elem"
-          >
-            <a class="social-media-list__link" href="#">LinkedIn</a>
-          </li>
-        </ul>
-      </nav>
+              <a class="social-media-list__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
 
@@ -188,11 +186,25 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio1.jpg"
-                    alt="Ноутбук"
-                    class="portfolio-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio1.webp    1x,
+                        ./images/portfolio1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio1.jpg    1x,
+                        ./images/portfolio1@2x.jpg 2x
+                      "
+                      src="./images/portfolio1.jpg"
+                      alt="Ноутбук"
+                      class="portfolio-card__image"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__content">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -202,7 +214,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="border border--tablet-first">
+                <div class="border">
                   <h2 class="portfolio-card__label">Технокряк</h2>
                   <p class="portfolio-card__text">Веб-сайт</p>
                 </div>
@@ -211,11 +223,25 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio2.jpg"
-                    alt="Два баскетболіста"
-                    class="portfolio-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio2.webp    1x,
+                        ./images/portfolio2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio2.jpg    1x,
+                        ./images/portfolio2@2x.jpg 2x
+                      "
+                      src="./images/portfolio2.jpg"
+                      alt="Два баскетболіста"
+                      class="portfolio-card__image"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__content">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -225,7 +251,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="border border--tablet-second">
+                <div class="border">
                   <h2 class="portfolio-card__label">
                     Постер New Orlean vs Golden Star
                   </h2>
@@ -236,11 +262,25 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio3.jpg"
-                    alt="Лого ресторану"
-                    class="portfolio-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio3.webp    1x,
+                        ./images/portfolio3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio3.jpg    1x,
+                        ./images/portfolio3@2x.jpg 2x
+                      "
+                      src="./images/portfolio3.jpg"
+                      alt="Лого ресторану"
+                      class="portfolio-card__image"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__content">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -259,11 +299,25 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio4.jpg"
-                    alt="Навушники"
-                    class="portfolio-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio4.webp    1x,
+                        ./images/portfolio4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio4.jpg    1x,
+                        ./images/portfolio4@2x.jpg 2x
+                      "
+                      src="./images/portfolio4.jpg"
+                      alt="Навушники"
+                      class="portfolio-card__image"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__content">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -282,11 +336,25 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio5.jpg"
-                    alt="Дві коробки"
-                    class="portfolio-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio5.webp    1x,
+                        ./images/portfolio5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio5.jpg    1x,
+                        ./images/portfolio5@2x.jpg 2x
+                      "
+                      src="./images/portfolio5.jpg"
+                      alt="Дві коробки"
+                      class="portfolio-card__image"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__content">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -305,11 +373,25 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio6.jpg"
-                    alt="Монітор"
-                    class="portfolio-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio6.webp    1x,
+                        ./images/portfolio6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio6.jpg    1x,
+                        ./images/portfolio6@2x.jpg 2x
+                      "
+                      src="./images/portfolio6.jpg"
+                      alt="Монітор"
+                      class="portfolio-card__image"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__content">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -330,11 +412,25 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio7.jpg"
-                    alt="Сторінки журналу"
-                    class="portfolio-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio7.webp    1x,
+                        ./images/portfolio7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio7.jpg    1x,
+                        ./images/portfolio7@2x.jpg 2x
+                      "
+                      src="./images/portfolio7.jpg"
+                      alt="Сторінки журналу"
+                      class="portfolio-card__image"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__content">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -353,11 +449,25 @@
             <li class="portfolio-list__item">
               <a href="" class="portfolio-list__link">
                 <div class="portfolio-card">
-                  <img
-                    src="./images/portfolio8.jpg"
-                    alt="Етикетка"
-                    class="portfolio-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio8.webp    1x,
+                        ./images/portfolio8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio8.jpg    1x,
+                        ./images/portfolio8@2x.jpg 2x
+                      "
+                      src="./images/portfolio8.jpg"
+                      alt="Етикетка"
+                      class="portfolio-card__image"
+                    />
+                  </picture>
+
                   <div class="portfolio-card__content">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -377,11 +487,25 @@
               <a href="" class="portfolio-list__link">
                 <div>
                   <div class="portfolio-card">
-                    <img
-                      src="./images/portfolio9.jpg"
-                      alt="Ноутбук"
-                      class="portfolio-card__image"
-                    />
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/portfolio9.webp    1x,
+                          ./images/portfolio9@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        srcset="
+                          ./images/portfolio9.jpg    1x,
+                          ./images/portfolio9@2x.jpg 2x
+                        "
+                        src="./images/portfolio9.jpg"
+                        alt="Ноутбук"
+                        class="portfolio-card__image"
+                      />
+                    </picture>
+
                     <div class="portfolio-card__content">
                       <p>
                         Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -494,7 +618,7 @@
         </div>
       </div>
     </footer>
-   
+
     <script src="./mobile-menu.js"></script>
   </body>
 </html>
