@@ -7,9 +7,11 @@
 }
 
 .peculiarities {
+    @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    }
           
 }
 .peculiarities__item {
@@ -28,19 +30,11 @@
 }
 
 .peculiarities__image {
-    padding: 25px 190px;
+    @include centered-flex;
     height: 120px;
     border-radius: 4px;
     background-color: $light-background-color;
     margin-bottom: 30px;
-
-    @media screen and (min-width: $tablet) {
-        padding: 25px 142px;
-        
-    }
-    @media screen and (min-width: $desctop) {
-        padding: 25px 100px;
-    }
 
 }
 
