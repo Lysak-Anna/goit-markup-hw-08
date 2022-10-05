@@ -61,20 +61,19 @@
     
     color: $footer-link-color;
     
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
         &--white {
             color: $white-color;
         }
 
-    @media screen and (min-width: $desctop) {
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
         &:hover,
         &:focus {
                 color: $accent-color;
-                transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                
             }
-    }
+    
 }
 .social-media {
 
@@ -108,7 +107,7 @@
 }
 .soc-med__link {
     &--footer {
-            border-radius: 50px;
+            
             fill: $white-color;
             background-color: rgba(255, 255, 255, 0.1);
             
@@ -157,9 +156,16 @@
         color: rgba(255, 255, 255, 0.6);
         margin-left: auto;
         margin-right: auto;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     @media screen and (min-width: $desctop) {
         width: 358px;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        outline: transparent;
     }
       
 }
