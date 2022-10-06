@@ -1,7 +1,7 @@
 .hero {
     @include section-paddings (118px, 118px);
     height: 400px;
-    
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right,
@@ -18,22 +18,24 @@
     @media screen and (min-width: $desctop) {
         @include section-paddings (200px, 200px);
         height: 600px;
-        max-width: 1600px;
+       
+        
            
     }
-
-}
-
-  @media screen and (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-      .hero {
-          background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-                 url('/images/header-img@2x.jpg');
-      }
+    @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+                    
+            background-image: linear-gradient(to right,
+                                rgba(47, 48, 58, 0.4),
+                                rgba(47, 48, 58, 0.4)),
+                            url('/images/header-img@2x.jpg');
+            
+                    
+        
+                }
+  
   }
 .title-box {
     max-width: 360px;
