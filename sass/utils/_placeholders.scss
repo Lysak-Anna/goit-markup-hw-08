@@ -12,3 +12,9 @@
     
     cursor: pointer;
 }
+
+%gap-interval {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

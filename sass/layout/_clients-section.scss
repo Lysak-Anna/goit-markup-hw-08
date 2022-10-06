@@ -7,9 +7,7 @@
 }
 
 .clients {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+   @extend %gap-interval;
 }
 
 .clients__item {
@@ -32,14 +30,13 @@
     border-radius: 4px;
     fill: currentColor;
 
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
         color: $accent-color;
 
-        transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
     }
 
 }

@@ -18,19 +18,11 @@
         
 }
 .team {
-   @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-   } 
+    @extend %gap-interval;
+  
 }
 .team__item {
-    @media screen and (max-width: $pre-tablet) {
-        flex-basis: 100%;
-         &:not(:last-child) {
-            margin-bottom: 30px;
-            }
-    }
+    flex-basis: 100%;
    
     @media screen and (min-width: $tablet) {
         flex-basis: calc((100% - 30px) / 2);
