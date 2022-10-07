@@ -1,0 +1,11 @@
+.title {
+    @include font-style (700, 28px, 1.18);
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desctop) {
+        @include font-style(700, 36px, 1.2);
+        margin-bottom: 50px;
+    }
+
+}

@@ -17,17 +17,17 @@
 }
 
 .mobile-header {
-    @media screen and (max-width: $pre-tablet) {
     display: flex;
-
-    &__button {
-        margin-left: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
+    &__logo {
+        display: flex;
+        align-items: center;
     }
 
+    @media screen and (max-width: $pre-tablet) {
+    @include section-paddings (10px, 10px);
+    justify-content: space-between;
     
+    }        
 }
 .menu-container,
 .menu-toggle {
