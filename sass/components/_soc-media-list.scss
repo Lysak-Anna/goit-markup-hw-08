@@ -1,0 +1,36 @@
+.social-media {
+    @include centered-flex;
+}
+.social-media__item {
+    &+& {
+            margin-left: 10px;
+        }
+}
+.social-media__link {
+    @include centered-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $icon-color;
+
+    &--footer {
+    
+        fill: $white-color;
+        background-color: rgba(255, 255, 255, 0.1);
+    
+        }
+    
+    @media screen and (min-width: $desctop) {
+    
+    
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+                fill: $white-color;
+                background-color: $accent-color;
+    
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.menu-toggle {
+    @include centered-flex;
+    min-width: 40px;
+    min-height: 40px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    cursor: pointer;   
+}

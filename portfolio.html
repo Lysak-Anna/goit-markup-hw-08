@@ -22,7 +22,7 @@
           </a>
 
           <button
-            class="menu-toggle menu-toggle--open js-open-menu"
+            class="mobile-header__button menu-toggle js-open-menu"
             type="button"
             aria-expanded="false"
             aria-controls="mobile-menu"
@@ -84,7 +84,7 @@
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button
-        class="menu-toggle menu-toggle--close js-close-menu"
+        class="menu-container__button menu-toggle js-close-menu"
         type="button"
         aria-expanded="false"
         aria-controls="mobile-menu"
@@ -184,7 +184,7 @@
           </ul>
           <ul class="portfolio-list">
             <li class="portfolio-list__item">
-              <a href="" class="portfolio-list__link">
+              <a href="#" class="portfolio-list__link">
                 <div class="portfolio-card">
                   <picture>
                     <source
@@ -260,7 +260,7 @@
               </a>
             </li>
             <li class="portfolio-list__item">
-              <a href="" class="portfolio-list__link">
+              <a href="#" class="portfolio-list__link">
                 <div class="portfolio-card">
                   <picture>
                     <source
@@ -338,7 +338,7 @@
               </a>
             </li>
             <li class="portfolio-list__item">
-              <a href="" class="portfolio-list__link">
+              <a href="#" class="portfolio-list__link">
                 <div class="portfolio-card">
                   <picture>
                     <source
@@ -414,7 +414,7 @@
               </a>
             </li>
             <li class="portfolio-list__item">
-              <a href="" class="portfolio-list__link">
+              <a href="#" class="portfolio-list__link">
                 <div class="portfolio-card">
                   <picture>
                     <source
@@ -566,7 +566,7 @@
               </a>
             </li>
             <li class="portfolio-list__item">
-              <a href="" class="portfolio-list__link">
+              <a href="#" class="portfolio-list__link">
                 <div class="portfolio-card">
                   <picture>
                     <source
@@ -644,7 +644,7 @@
               </a>
             </li>
             <li class="portfolio-list__item">
-              <a href="" class="portfolio-list__link">
+              <a href="#" class="portfolio-list__link">
                 <div class="portfolio-card">
                   <picture>
                     <source
@@ -720,7 +720,7 @@
               </a>
             </li>
             <li class="portfolio-list__item">
-              <a href="" class="portfolio-list__link">
+              <a href="#" class="portfolio-list__link">
                 <div class="portfolio-card">
                   <picture>
                     <source
@@ -796,7 +796,7 @@
               </a>
             </li>
             <li class="portfolio-list__item">
-              <a href="" class="portfolio-list__link">
+              <a href="#" class="portfolio-list__link">
                 <div>
                   <div class="portfolio-card">
                     <picture>
@@ -887,6 +887,7 @@
                 >Studio</span
               ></a
             >
+
             <address>
               <ul class="footer-contacts">
                 <li class="footer-contacts__item">
@@ -913,32 +914,45 @@
               </ul>
             </address>
           </div>
-          <div class="social-media">
-            <p class="footer-text">приєднуйтесь</p>
-            <ul class="footer-soc-med">
-              <li class="soc-med__item">
-                <a href="" class="soc-med__link soc-med__link--footer">
+
+          <div class="social-container">
+            <p class="social-container__text">приєднуйтесь</p>
+            <ul class="social-container__list social-media">
+              <li class="social-media__item">
+                <a
+                  href="#"
+                  class="social-media__link social-media__link--footer"
+                >
                   <svg width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="soc-med__item">
-                <a href="" class="soc-med__link soc-med__link--footer">
+              <li class="social-media__item">
+                <a
+                  href="#"
+                  class="social-media__link social-media__link--footer"
+                >
                   <svg width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="soc-med__item">
-                <a href="" class="soc-med__link soc-med__link--footer">
+              <li class="social-media__item">
+                <a
+                  href="#"
+                  class="social-media__link social-media__link--footer"
+                >
                   <svg width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="soc-med__item">
-                <a href="" class="soc-med__link soc-med__link--footer">
+              <li class="social-media__item">
+                <a
+                  href="#"
+                  class="social-media__link social-media__link--footer"
+                >
                   <svg width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
@@ -960,9 +974,9 @@
               class="field__input"
             />
           </div>
-          <button type="submit" class="send-button">
+          <button type="submit" class="button footer-send__button">
             Підписатися
-            <svg width="24" height="24" class="send-button__icon">
+            <svg width="24" height="24" class="footer-send__icon">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>

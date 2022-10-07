@@ -195,16 +195,3 @@
     border-color: $accent-color;
 }
 
-.form__button {
-    @extend %button;
-    margin-right: auto;
-    margin-left: auto;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: $active-button-bg-color;
-    }
-
-}
